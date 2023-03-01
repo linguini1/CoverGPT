@@ -38,7 +38,7 @@ subparsers = parser.add_subparsers(dest="subcommand")
 generate_prompt = subparsers.add_parser("prompt", help="Generates a ChatGPT prompt for writing the cover letter.")
 
 generate_prompt.add_argument(
-    "job file",
+    "job-file",
     help="Path to the .txt file containing the job posting.",
     type=file_path_exists
 )
@@ -55,13 +55,13 @@ generate_letter = subparsers.add_parser(
 )
 
 generate_letter.add_argument(
-    "job file",
+    "job-file",
     help="Path to the .txt file containing the job posting.",
     type=file_path_exists
 )
 
 generate_letter.add_argument(
-    "gpt file",
+    "gpt-file",
     type=file_path_exists,
     help="Path to the .txt file containing the response provided by ChatGPT."
 )
