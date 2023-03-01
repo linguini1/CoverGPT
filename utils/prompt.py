@@ -14,7 +14,6 @@ class Fields(StrEnum):
     APPLICANT = "[APPLICANT]"
     JOB_POSTING = "[JOB POSTING]"
     APPLICANT_INFO = "[APPLICANT INFO]"
-    EMPLOYER_INFO = "[EMPLOYER INFO]"
     POSITION = "[POSITION]"
     EMPLOYER = "[EMPLOYER]"
 
@@ -32,7 +31,6 @@ def chatgpt_prompt(applicant: Applicant, job_posting: JobPosting, prompt_templat
     template = template.replace(Fields.EMPLOYER, job_posting.employer.name)
     template = template.replace(Fields.POSITION, job_posting.position)
     template = template.replace(Fields.JOB_POSTING, job_posting.raw_posting)
-    template = template.replace(Fields.EMPLOYER_INFO, str(job_posting.employer))
     template = template.replace(Fields.APPLICANT_INFO, str(applicant))
 
     return template

@@ -1,29 +1,14 @@
-I would like you to write a cover letter for the following job posting:
-
+I would like you to write a cover letter for the following job posting made by the employer [EMPLOYER]:
 [JOB POSTING]
 
 The information of the applicant that is applying for this job is as follows:
-
 [APPLICANT INFO]
 
-The entire cover letter must be written in first person from the applicant's perspective. When referring to the applicant, only use their first name.
-
-The information of the employer is as follows:
-
-[EMPLOYER INFO]
-
-The cover letter will consist of four parts, which you will format in the following way:
-
-Part 1: [Your response for part 1]
-Part 2: [Your response for part 2]
-Part 3: [Your response for part 3]
-Part 4: [Your response for part 4]
-
-For part 1, write one or two short sentences that introduce the [APPLICANT]'s relevant skills and education for the position. DO NOT include a greeting in this part. Assume a greeting has already been written.
+For part 1, write one or two short sentences that introduce the [APPLICANT]'s relevant skills and education for the position. DO NOT include a greeting in this part. Assume a greeting has already been written. Precede your answer with 'Part 1: '.
 
 For part 2, write a main cover letter body (without a greeting or introduction) of one to two paragraphs which go into detail about how [APPLICANT]'s skills, education and previous positions are relevant to the position.
-Only pick the most relevant information about [APPLICANT]'s skills to include in this part. DO NOT include a greeting in this part; assume a greeting has already been written. DO NOT include any technologies that were not provided in the applicant's skills section.
+Only pick the most relevant information about [APPLICANT]'s skills to include in this part. DO NOT include a greeting in this part; assume a greeting has already been written. DO NOT include any technologies that were not provided in the applicant's skills section.  Precede your answer with 'Part 2: '.
 
-For part 3, write two to three sentences which describe [APPLICANT]'s interest in working for [EMPLOYER] in the position of [POSITION]
+For part 3, write two to three sentences which describe [APPLICANT]'s interest in working for [EMPLOYER] in the position of [POSITION].  Precede your answer with 'Part 3: '.
 
-For part 4, write one or two closing sentences that summarize why [APPLICANT] is suited for the position and expresses interest in discussing the position further. DO NOT include a sign-off in this section, assume that a sentence similar to "Sincerely, [APPLICANT]" will be included following this part.
+For part 4, write one or two closing sentences that summarize why [APPLICANT] is suited for the position and expresses interest in discussing the position further. DO NOT include a sign-off in this section, assume that a sentence similar to "Sincerely, [APPLICANT]" will be included following this part. Precede your answer with 'Part 4: '.
