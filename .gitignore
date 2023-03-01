@@ -1,6 +1,12 @@
-/letters
+# Venv
 /venv
 
-# Specific to my testing
-job_posting.txt
-gpt_response.txt
+# PyCharm
+.idea
+
+# Do not ignore resources
+!/resources
+
+# Files used in/outputted by the program that are not resources
+*.txt
+/letters
