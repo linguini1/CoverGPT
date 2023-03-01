@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/GPTResume.iml" filepath="$PROJECT_DIR$/.idea/GPTResume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CoverGPT.iml" filepath="$PROJECT_DIR$/.idea/CoverGPT.iml" />
     </modules>
   </component>
 </project>

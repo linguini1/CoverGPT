@@ -122,6 +122,7 @@ class Applicant:
         skills = ", ".join(self.skills)
         languages = ", ".join(self.skills)
         positions = "\n".join([str(p) for p in self.positions])
+        projects = "\n".join(str(p) for p in self.projects)
 
         return f"Applicant name: {self.name}\nApplicant skills: {skills}\n" \
                f"Applicant speaks the following languages: {languages}\n" \
