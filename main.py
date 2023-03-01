@@ -27,7 +27,7 @@ def prompt_logic(applicant: Applicant, job_posting: JobPosting, outfile: Optiona
             file.write(prompt)
         exit()
 
-    # Otherwise just print
+    # Otherwise, just print
     print(f"{'Prompt Follows':=^100}")
     print(prompt)
 
@@ -37,13 +37,12 @@ def main():
 
     # Unpack arguments
     args = vars(parser.parse_args())
-    print(args)
     subcommand = args.get("subcommand")
 
     if subcommand is None:
         raise SystemExit("Use -h for a list of commands.")
 
-    job_posting_file = args.get("job file")
+    job_posting_file = args.get("job-file")
     output_file = args.get("o")
 
     # Load applicant
@@ -81,7 +80,7 @@ def main():
         )
 
         # Open GPT response
-        gpt_file = args.get("gpt file")
+        gpt_file = args.get("gpt-file")
         with open(gpt_file, 'r') as file:
             gpt_response = file.read().strip()
 
