@@ -36,3 +36,11 @@ I recommend that if you use this tool, you modify the cover letter that was writ
 and to ensure that the work is your own in case that is of significance to your potential employer.
 
 ## Usage
+
+
+## Future Development
+In the future it would be nice to integrate this with the GPT3 API to prevent copy-pasting between ChatGPT and the 
+application.
+
+It would also be very convenient to integrate this with the GitHub API to allow users to pull already written
+descriptions of their personal projects + technologies that could be included in the cover letter when relevant.

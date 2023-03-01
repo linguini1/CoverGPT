@@ -10,6 +10,29 @@ import json
 JSON = dict[str, Any]
 
 
+# Projects
+@dataclass
+class Project:
+    """Represents one of the applicant's projects."""
+
+    name: str
+    description: str
+    technologies: list[str] = field(default_factory=list)
+
+    @classmethod
+    def from_json(cls, data: JSON) -> Self:
+        """Returns a populated Education object from JSON data."""
+        return cls(
+            name=data.get("name"),
+            description=data.get("description"),
+            technologies=data.get("technologies")
+        )
+
+    def __str__(self):
+        technologies = ", ".join(self.technologies)
+        return f"Project name: {name}\nProject description: {self.description}\nProject technologies: {technologies}"
+
+
 # Education
 @dataclass
 class Education:
@@ -66,6 +89,7 @@ class Applicant:
     skills: list[str] = field(default_factory=list)
     languages: list[str] = field(default_factory=list)
     positions: list[Position] = field(default_factory=list)
+    self.projects: list[Project] = field(default_factory=list)
 
     @classmethod
     def from_json(cls, json_file: str) -> Self:
@@ -79,12 +103,18 @@ class Applicant:
         for position in data.get("positions", []):
             positions.append(Position.from_json(position))
 
+        # Unpack projects
+        projects = []
+        for project in data.get("projects", []):
+            positions.append(Project.from_json(project))
+
         return cls(
             name=data.get("name"),
             education=Education.from_json(data.get("education")),
             skills=data.get("skills"),
             languages=data.get("languages"),
-            positions=positions
+            positions=positions,
+            projects=projects
         )
 
     def __str__(self):
@@ -95,4 +125,5 @@ class Applicant:
 
         return f"Applicant name: {self.name}\nApplicant skills: {skills}\n" \
                f"Applicant speaks the following languages: {languages}\n" \
-               f"Applicant education: {self.education}\nPositions the applicant has previously held: \n{positions}"
+               f"Applicant education: {self.education}\nPositions the applicant has previously held: \n{positions}\n" \
+               f"Projects completed by applicant: {projects}"
