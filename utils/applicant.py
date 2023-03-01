@@ -30,7 +30,8 @@ class Project:
 
     def __str__(self):
         technologies = ", ".join(self.technologies)
-        return f"Project name: {name}\nProject description: {self.description}\nProject technologies: {technologies}"
+        return f"Project name: {self.name}\nProject description: {self.description}\n" \
+               f"Project technologies: {technologies}"
 
 
 # Education
