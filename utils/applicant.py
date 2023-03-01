@@ -90,7 +90,7 @@ class Applicant:
     skills: list[str] = field(default_factory=list)
     languages: list[str] = field(default_factory=list)
     positions: list[Position] = field(default_factory=list)
-    self.projects: list[Project] = field(default_factory=list)
+    projects: list[Project] = field(default_factory=list)
 
     @classmethod
     def from_json(cls, json_file: str) -> Self:
