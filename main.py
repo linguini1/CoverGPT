@@ -23,7 +23,7 @@ def prompt_logic(applicant: Applicant, job_posting: JobPosting, outfile: Optiona
     prompt = chatgpt_prompt(applicant, job_posting, PROMPT_TEMPLATE_FILE)  # Create prompt
 
     if outfile:
-        with open(outfile, "a") as file:
+        with open(outfile, "a", encoding="utf-8") as file:
             file.write(prompt)
         exit()
 
@@ -55,7 +55,7 @@ def main():
         hiring_manager=input("Hiring manager (hit enter if unknown): ")
     )
 
-    with open(job_posting_file, 'r') as file:
+    with open(job_posting_file, 'r', encoding="utf-8") as file:
         job_posting = JobPosting(
             employer=employer,
             position=input("Position name: "),
@@ -81,7 +81,7 @@ def main():
 
         # Open GPT response
         gpt_file = args.get("gpt-file")
-        with open(gpt_file, 'r') as file:
+        with open(gpt_file, 'r', encoding="utf-8") as file:
             gpt_response = file.read().strip()
 
         # Add GPT generated text to template

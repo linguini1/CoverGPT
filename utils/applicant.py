@@ -96,7 +96,7 @@ class Applicant:
     def from_json(cls, json_file: str) -> Self:
         """Returns a populated Applicant object from the data in an applicant profile JSON file."""
 
-        with open(json_file, 'r') as file:
+        with open(json_file, 'r', encoding='utf-8') as file:
             data = json.load(file)
 
         # Unpack positions
