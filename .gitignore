@@ -1,0 +1,6 @@
+/letters
+/venv
+
+# Specific to my testing
+job_posting.txt
+gpt_response.txt
