@@ -1,12 +1,5 @@
-# Venv
-/venv
+# Virtual environment
+/venv/
 
-# PyCharm
-.idea
+# Secrets
 
-# Do not ignore resources
-!/resources
-
-# Files used in/outputted by the program that are not resources
-*.txt
-/letters
